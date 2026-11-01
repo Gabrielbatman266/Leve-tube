@@ -747,6 +747,7 @@
     <string name="remove_from_search_history">Remover do histórico de pesquisa</string>
     <string name="sidebar_notification">Mostrar notificação na barra lateral</string>
     <string name="color_scheme_dark_blue_oled">Azul Escuro (OLED)</string>
+    <string name="color_scheme_leve_amoled">AMOLED preto (Leve)</string>
     <string name="remove_video_to_watch_later">Remover da playlist \"Assistir mais tarde\"</string>
     <string name="default_option">Padrão</string>
     <string name="preferred_dns">DNS preferencial</string>

@@ -102,6 +102,7 @@ public class MainUIData extends DataChangeBase implements ProfileChangeListener 
     private float mVideoGridScale;
     private final List<ColorScheme> mColorSchemes = new ArrayList<>();
     private int mColorSchemeIndex;
+    private static final int LEVE_AMOLED_SCHEME = 8;
     private int mChannelCategorySorting;
     private int mPlaylistsStyle;
     private boolean mIsUploadsOldLookEnabled;
@@ -421,6 +422,13 @@ public class MainUIData extends DataChangeBase implements ProfileChangeListener 
                 "App.Theme.Leanback.Blue.OLED.Browse",
                 "App.Theme.Leanback.Blue.Preferences",
                 mContext));
+        // Leve: preto puro, padrão
+        mColorSchemes.add(new ColorScheme(
+                R.string.color_scheme_leve_amoled,
+                "App.Theme.Leve.AMOLED.Player",
+                "App.Theme.Leve.AMOLED.Browse",
+                "App.Theme.Leve.AMOLED.Preferences",
+                mContext));
     }
 
     private void restoreState() {
@@ -431,11 +439,11 @@ public class MainUIData extends DataChangeBase implements ProfileChangeListener 
         //mIsCardAnimatedPreviewsEnabled = Helpers.parseBoolean(split, 0, true);
         mVideoGridScale = Helpers.parseFloat(split, 1, 1.0f); // 4 cards in a row
         mUIScale = Helpers.parseFloat(split, 2, 1.0f);
-        mColorSchemeIndex = Helpers.parseInt(split, 3, 1);
+        mColorSchemeIndex = Helpers.parseInt(split, 3, LEVE_AMOLED_SCHEME); // Leve: AMOLED por padrão
         mIsCardMultilineTitleEnabled = Helpers.parseBoolean(split, 4, true);
         mChannelCategorySorting = Helpers.parseInt(split, 5, CHANNEL_SORTING_LAST_VIEWED);
         mPlaylistsStyle = Helpers.parseInt(split, 6, PLAYLISTS_STYLE_GRID);
-        mCardTitleLinesNum = Helpers.parseInt(split, 7, 1);
+        mCardTitleLinesNum = Helpers.parseInt(split, 7, 2); // Leve: títulos em 2 linhas, mais fácil de ler
         mIsCardTextAutoScrollEnabled = Helpers.parseBoolean(split, 8, true);
         mIsUploadsOldLookEnabled = Helpers.parseBoolean(split, 9, false);
         mIsUploadsAutoLoadEnabled = Helpers.parseBoolean(split, 10, true);

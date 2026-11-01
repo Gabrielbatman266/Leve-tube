@@ -3,6 +3,11 @@
     <!-- MOD: Focused player button color (default: #66EEEEEE, new: #E8FFFFFF) -->
     <color name="lb_control_button_color">#86EEEEEE</color>
 
+    <!-- Leve AMOLED -->
+    <color name="leve_black">#000000</color>
+    <color name="leve_card">#0E0E0E</color>
+    <color name="leve_accent">#FF3B30</color>
+
     <!-- Common colors -->
     <color name="default_background_gradient_start">#000000</color>
     <color name="default_background_gradient_end">#DDDDDD</color>

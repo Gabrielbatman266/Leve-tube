@@ -824,7 +824,7 @@ public class PlayerData extends DataChangeBase implements PlayerConstants, Profi
         mIsSeekConfirmPlayEnabled = Helpers.parseBoolean(split, 36, false);
         mSeekIncrementMs = Helpers.parseInt(split, 37, 10_000);
         // old subs size px
-        mSubtitleScale = Helpers.parseFloat(split, 39, 1.0f);
+        mSubtitleScale = Helpers.parseFloat(split, 39, 1.2f); // Leve: legenda um pouco maior
         mPlayerVolume = Helpers.parseFloat(split, 40, 1.0f);
         mIsTooltipsEnabled = Helpers.parseBoolean(split, 41, true);
         mSubtitlePosition = Helpers.parseFloat(split, 42, 0.1f);

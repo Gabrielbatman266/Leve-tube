@@ -732,6 +732,7 @@
     <string name="remove_from_search_history">Remover do histórico de pesquisa</string>
     <string name="sidebar_notification">Mostrar notificação na barra lateral</string>
     <string name="color_scheme_dark_blue_oled">Azul escuro (OLED)</string>
+    <string name="color_scheme_leve_amoled">AMOLED preto (Leve)</string>
     <string name="preferred_dns">DNS preferido</string>
     <string name="action_debug_info">Informações de depuração</string>
     <string name="player_time_stretching">Ajuste de tempo do áudio</string>

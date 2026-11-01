@@ -248,4 +248,32 @@
         <item name="cardSelectedBackground">@color/card_selected_background_white_grey</item>
     </style>
     <!--  End Color scheme: Dark Blue (OLED)  -->
+
+    <!--  Color scheme: Leve AMOLED (preto puro, foco branco bem visível, detalhe vermelho)  -->
+    <style name="App.Theme.Leve.AMOLED.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/leve_black</item>
+        <item name="brandColor">@color/leve_black</item>
+        <item name="brandAccentColor">@color/leve_accent</item>
+        <item name="shelfBackground">@color/leve_black</item>
+        <item name="cardDefaultBackground">@color/leve_card</item>
+        <item name="cardSelectedBackground">@color/card_selected_background_white</item>
+        <item name="cardProgressStyle">@style/ProgressBarHorizontal.Dark</item>
+        <item name="android:colorAccent" tools:targetApi="21">@color/leve_accent</item>
+        <item name="appLogo">@null</item>
+    </style>
+    <style name="App.Theme.Leve.AMOLED.Player" parent="App.Theme.Leanback.Player">
+        <item name="playbackProgressPrimaryColor">@color/leve_accent</item>
+        <item name="playbackProgressSecondaryColor">@color/light_red</item>
+        <item name="playbackControlsIconHighlightColor">@color/leve_accent</item>
+        <item name="shelfBackground">@color/leve_black</item>
+        <item name="cardDefaultBackground">@color/leve_card</item>
+        <item name="cardSelectedBackground">@color/card_selected_background_white</item>
+        <item name="cardProgressStyle">@style/ProgressBarHorizontal.Dark</item>
+        <item name="android:colorAccent" tools:targetApi="21">@color/leve_accent</item>
+    </style>
+    <style name="App.Theme.Leve.AMOLED.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="android:colorPrimary" tools:targetApi="21">@color/leve_black</item>
+        <item name="android:colorAccent" tools:targetApi="21">@color/leve_accent</item>
+    </style>
+    <!--  End Color scheme: Leve AMOLED  -->
 </resources>
