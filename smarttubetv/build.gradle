@@ -66,6 +66,9 @@ android {
         // Additionally, you should extend your application from MultiDexApplication
         multiDexEnabled = true
 
+        // Leve Tube: só português e inglês = arquivo de recursos bem menor
+        resConfigs "pt", "pt-rBR", "en"
+
         // Trying to fix VerifyError/ClassNotFoundException
         multiDexKeepProguard file("multidex-keep.pro")
 
