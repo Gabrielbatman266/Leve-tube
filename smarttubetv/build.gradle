@@ -69,10 +69,6 @@ android {
         // Trying to fix VerifyError/ClassNotFoundException
         multiDexKeepProguard file("multidex-keep.pro")
 
-        // The content of Universal apk
-        ndk {
-            abiFilters 'armeabi-v7a', 'arm64-v8a'
-        }
     }
 
     // https://stackoverflow.com/questions/37382057/android-apk-how-to-exclude-a-so-file-from-a-3rd-party-dependency-using-gradle
@@ -173,19 +169,12 @@ android {
         stleve {
             applicationId "com.gabriel.levetube"
             targetSdkVersion project.properties.compileSdkVersion
-            ndk {
-                abiFilters 'armeabi-v7a'
-            }
         }
         stfdroid {
             applicationId "app.smarttube.fdroid"
             minSdkVersion 21
             targetSdkVersion project.properties.compileSdkVersion
 
-            // The content of Universal apk
-            ndk {
-                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86'
-            }
         }
     }
 }
