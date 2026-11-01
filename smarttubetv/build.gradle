@@ -168,6 +168,8 @@ android {
         // Leve Tube: versão leve para TV box fraco (fork do SmartTube, licença MIT)
         stleve {
             applicationId "com.gabriel.levetube"
+            // os outros módulos só têm stbeta/ststable/stfdroid: usa o estável
+            matchingFallbacks = ['ststable']
             targetSdkVersion project.properties.compileSdkVersion
         }
         stfdroid {
